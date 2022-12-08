@@ -1,0 +1,17 @@
+.bordeImagen{
+    border-radius: 20%;
+}
+
+.espacio{
+    margin-bottom: 30px;
+}
+
+.lineaSeparar{
+    border-top: 1px grey solid;
+    padding-top: 30px;
+}
+
+.separacionIcons{
+    padding-left: 10px;
+    padding-right: 10px;
+}

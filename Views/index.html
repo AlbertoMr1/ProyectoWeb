@@ -9,6 +9,7 @@
             type="text/css"
             href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         />
+        <link rel="stylesheet" href="../assets/css/estilos.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -38,19 +39,28 @@
                                 >Home</a
                             >
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#acercaDeMi">Acerca de mí</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Secciones
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#acercaDeMi">Acerca de mí</a></li>
+                              <li><a class="dropdown-item" href="#record">Records</a></li>
+                              <li><a class="dropdown-item" href="#pelicula">Película</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#redesSociales">Redes sociales</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://ovallehoy.cl/" target="_blank">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <div class="d-flex">
                         <a class="btn" href="./inicioSesion.html" target="_self">Iniciar sesion</a>
-                        <a class="btn btn-outline-success" href="./registro.html" target="_self">
+                        <a class="btn btn-primary" href="./registro.html" target="_self">
                             Registrarse
                         </a>
                     </div>
@@ -59,9 +69,9 @@
         </nav>
 
         <div class="container">
-            <div class="row">
+            <div class="row espacio">
                 <div class="col">
-                    <img src="../assets/images/Umberto.jpg" alt="Umberto" class="img-thumbnail">
+                    <img src="../assets/images/Umberto.jpg" alt="Umberto" class="img-thumbnail bordeImagen">
                 </div>
                 <div class="col">
                     <h1>Umberto Pelizzari</h1>
@@ -71,7 +81,7 @@
 
             <h2 id="acercaDeMi">Acerca de mí</h2>
 
-            <div class="row">
+            <div class="row espacio">
                 <div class="col-6">
                     <p>Comenzó a nadar desde los cinco años de edad. Para 1982 había participado en 11 temporadas de natación alcanzando un nivel profesional. En 1984 comenzó su trayectoria como apneísta. En 1988 obtuvo un récord mundial al permanecer sumergido bajo el agua sin movimiento durante un tiempo de 5 minutos y 33 segundos. Su marca fue superada por el francés Philippe Goasse, quien permaneció sumergido durante 5 minutos y 50 segundos. El 19 de mayo de 1990, Pelizzari respondió al francés estableciendo un nuevo récord con un tiempo de 6 minutos y 3 segundos.</p>
                     <p>Obtuvo la licenciatura en Ciencias de la Información por la Universidad de Milán el 12 de julio de 1990. Cuatro meses más tarde, el 10 de noviembre, rompió el récord de inmersión libre en la modalidad de peso constante al descender a una profundidad de 65 m. Es entonces cuando comienza la rivalidad con Pipín Ferreras quien había establecido el rércord previamente en los 62 m.</p>
@@ -84,11 +94,19 @@
                 </div>
                 <div class="col-2"></div>
                 <div class="col-4">
-                    <img src="../assets/images/umbertoRecord.jpg" alt="Umberto Record" class="img-thumbnail" width="100%">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/images/umbertoRecord.jpg" class="card-img-top" alt="Umberto Record">
+                        <div class="card-body">
+                          <h5 class="card-title">Umberto va a Polonia</h5>
+                          <p class="card-text">Umberto visitará polonia</p>
+                          <a href="https://freebody.eu/umberto-pelizzari-przyjedzie-do-polski/" class="btn btn-primary" target="_blank">Ver más</a>
+                        </div>
+                      </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row espacio" id="record">
+                <h2>Records</h2>
                 <div class="col-4">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mAMbf4fxFjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -98,8 +116,9 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6">
+            <div class="row espacio" id="pelicula">
+                <h2>Pelicula</h2>
+                <div class="col-5">
                     <p>En 2000, junto con Pipín Ferreras, participó en la película Oceanmen producida por IMAX. En 2001 fue coautor con Stefano Tovalieri el primer manual ilustrado de apnea (Manual of Freediving: Underwater on a Single Breath). En 2005 ambos publicaron Curso de apnea. En 2008 publicó Profondamente y en 2010 fue coautor con Lisetta Landoni de Respiration pour l'apnée: Du débutant à l'expert. Ha trabajado como articulista y reportero para programas de televisión. Fue fundador de una Academia de Apnea en Italia. Desde 2006 ha sido maestro en la Scuola Normale Superiore di Pisa.</p>
                 </div>
                 <div class="col-1"></div>
@@ -114,16 +133,25 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         ></script>
     </body>
-	<footer>
+	<footer id="redesSociales" class="lineaSeparar">
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4">
-                <a href="https://www.facebook.com/pelizzari.umberto/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="50px"></a>
-                <a href="https://twitter.com/UPELIZZARI" target="_blank"><img src="../assets/images/twitter.png" alt="twitter" width="50px"></a>
-                <a href="https://www.instagram.com/umberto_pelizzari/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="50px"></a>
-                <a href="https://www.umbertopelizzari.com/" target="_blank"><img src="../assets/images/world-wide-web.png" alt="instagram" width="50px"></a>
+                <a href="https://www.facebook.com/pelizzari.umberto/" target="_blank">
+                    <img src="../assets/images/facebook.png" alt="facebook" width="50px" class="separacionIcons">
+                </a>
+                <a href="https://twitter.com/UPELIZZARI" target="_blank">
+                    <img src="../assets/images/twitter.png" alt="twitter" width="50px" class="separacionIcons">
+                </a>
+                <a href="https://www.instagram.com/umberto_pelizzari/" target="_blank">
+                    <img src="../assets/images/instagram.png" alt="instagram" width="50px" class="separacionIcons">
+                </a>
+                <a href="https://www.umbertopelizzari.com/" target="_blank">
+                    <img src="../assets/images/world-wide-web.png" alt="instagram" width="50px" class="separacionIcons">
+                </a>
             </div>
             <div class="col-4"></div>
         </div>
+        <p class="text-center">Todos los derechos reservador a .........</p>
 	</footer>
 </html>
